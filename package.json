@@ -1,0 +1,13 @@
+{
+  "name": "voice-proxy",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "ws": "^8.18.0",
+    "dotenv": "^16.4.5"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
