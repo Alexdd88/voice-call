@@ -41,5 +41,7 @@ wss.on('connection', async (twilio) => {
   openai.send(JSON.stringify({ type: 'session.update', session: { instructions } }));
 });
 
-const PORT = process.env.PORT || 8080;
-server.listen(PORT, () => console.log('WS proxy on :' + PORT));
+const PORT = process.env.PORT;
+server.listen(PORT, '0.0.0.0', () => console.log('WS proxy on :' + PORT));
+
+
